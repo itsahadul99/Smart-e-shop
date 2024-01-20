@@ -2,331 +2,393 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart e-Shop</title>
-    <!-- google font link here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <!-- daisyUI cdn link here -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- custom style -->
-    <style>
-        .font-poppins {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart e-Shop</title>
+  <!-- google font link here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- font awesome cdn link here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- daisyUI cdn link here -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- custom style -->
+  <style>
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 
 </head>
 
 <body class="m-0 p-0">
-    <!-- Header section start here  -->
-    <header class="bg-[#F4F4F4]">
-        <!-- Nav bar start here -->
-        <nav class="w-11/12 mx-auto flex justify-between items-center py-4">
-            <div>
-                <img src="./images/logo-black.png" alt="">
-            </div>
-            <ul class="flex hidden lg:flex gap-8 font-poppins font-semibold ">
-                <li><a href="#" class="text-lime-500">Home</a></li>
-                <li><a href="#">Catagories</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Page</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Special Offer</a></li>
-                <li><a href="#">But Porto!</a></li>
-            </ul>
-            <div class="lg:hidden">
-                <img src="./images/Vector.png" alt="">
-            </div>
-        </nav>
-        <!-- Nav bar end here-->
-        <!-- Banner section start here -->
-        <div class="carousel w-full border-b-2">
-            <!-- Slide 1 -->
-            <div id="slide1" class="carousel-item relative w-full">
-                <img src="./images/slide-1.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <!-- Slide 2 -->
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="./images/slide-2.jpg" class="w-full" />
-
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-            </div>
+  <!-- Header section start here  -->
+  <header class="bg-[#F4F4F4]">
+    <!-- Nav bar start here -->
+    <nav class="container mx-auto flex justify-between items-center py-4">
+      <div>
+        <img src="./images/logo-black.png" alt="">
+      </div>
+      <ul class="flex hidden lg:flex gap-8 font-poppins font-semibold ">
+        <li><a href="#" class="text-lime-500">Home</a></li>
+        <li><a href="#">Catagories</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Special Offer</a></li>
+        <li><a href="#">But Porto!</a></li>
+      </ul>
+      <div class="lg:hidden">
+        <img src="./images/Vector.png" alt="">
+      </div>
+    </nav>
+    <!-- Nav bar end here-->
+    <!-- Banner section start here -->
+    <div class="container mx-auto">
+      <div class="carousel w-full border-b-2">
+        <!-- Slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="./images/slide-1.jpg" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
         </div>
-        <div class="flex flex-col md:flex-row lg:flex-row justify-center gap-5">
-            <div class="card font-poppins">
-                <div class="card-body">
-                    <div class="flex gap-2 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                            stroke="currentColor" class="w-10">
-                            <path strokeLinecap="round" strokeLinejoin="round"
-                                d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <div>
-                            <h2 class="card-title uppercase text-sm font-semibold">Money Back guarantee</h2>
-                            <p class="text-xs text-gray-400">100% money back guarantee</p>
-                        </div>
+        <!-- Slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="./images/slide-2.jpg" class="w-full" />
 
-                    </div>
-                </div>
-            </div>
-            <div class="card font-poppins">
-                <div class="card-body">
-                    <div class="flex gap-2 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                            stroke="currentColor" class="w-10">
-                            <path strokeLinecap="round" strokeLinejoin="round"
-                                d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <div>
-                            <h2 class="card-title uppercase text-sm font-semibold">Online support 24/7</h2>
-                            <p class="text-xs text-gray-400">Free shipping on all orders over $99</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card font-poppins">
-                <div class="card-body">
-                    <div class="flex gap-2 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                            stroke="currentColor" class="w-10">
-                            <path strokeLinecap="round" strokeLinejoin="round"
-                                d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                        </svg>
-                        <div>
-                            <h2 class="card-title uppercase text-sm font-semibold">Free shipping & return</h2>
-                            <p class="text-xs text-gray-400">Free shipping on all orders over $99</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
         </div>
-        <!-- Banner section end here -->
-    </header>
-    <!-- Header section end here  -->
-    <main>
-        <!-- offer section start here -->
-        <section class="w-11/12 mx-auto my-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8">
-                <div class="card card-compact w-64 lg:w-96 bg-[#F6F7F9] shadow-xl mx-auto">
-                    <figure><img src="./images/banner1.jpg" alt="Shoes" /></figure>
-                    <div class="card-body bg-[#222529] text-center ">
-                        <h2 class="text-xs text-[#5F804A]">Save Up To</h2>
-                        <h1 class="text-4xl font-bold text-white">$100</h1>
-                        <p class="text-xl text-white">on Porto Watch Series 5</p>
-                    </div>
-                </div>
-                <div class="card card-compact w-64 lg:w-96 bg-[#F6F7F9] shadow-xl mx-auto">
-                    <figure><img src="./images/banner2.jpg" alt="Shoes" /></figure>
-                    <div class="card-body bg-[#222529] text-center ">
-                        <h2 class="text-xs text-[#5F804A]">Save Up To</h2>
-                        <h1 class="text-4xl font-bold text-white">$80</h1>
-                        <p class="text-xl text-white">on Porto Pods Professional</p>
-                    </div>
-                </div>
-                <div class="card card-compact w-64 lg:w-96 bg-[#F6F7F9] shadow-xl mx-auto">
-                    <figure><img src="./images/banner3.jpg" alt="Shoes" /></figure>
-                    <div class="card-body bg-[#222529] text-center ">
-                        <h2 class="text-xs text-[#5F804A]">Save Up To</h2>
-                        <h1 class="text-4xl font-bold text-white">$90</h1>
-                        <p class="text-xl text-white">on Bluetooth Speaker</p>
-                    </div>
-                </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-5">
+        <div class="card font-poppins">
+          <div class="card-body">
+            <div class="flex gap-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                stroke="currentColor" class="w-10">
+                <path strokeLinecap="round" strokeLinejoin="round"
+                  d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <div>
+                <h2 class="card-title uppercase text-sm font-semibold">Money Back guarantee</h2>
+                <p class="text-xs text-gray-400">100% money back guarantee</p>
+              </div>
+
             </div>
-        </section>
-        <!-- offer section end here -->
-        <!-- tab section start here -->
-        <section class="w-11/12 mx-auto my-10">
-            <div role="tablist" class="tabs tabs-bordered">
-                <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Feature Products" checked />
-                <div role="tabpanel" class="tab-content p-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
-                        <div class="card bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                              <img src="./images/product-5.jpg" alt="Shoes" />
-                            </figure>
-                            <div class="card-body items-center text-center font-poppins">
-                              <p class="text-xs uppercase"> Dress Shoes</p>
-                              <h2> Porto Evolution Headset</h2>
-                              <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
-                              <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"  />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"checked/>
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                              </div>
-                              <div class="card-actions">
-                                <button class="btn  hover:bg-lime-500  ">Select Option</button>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="card  bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                              <img src="./images/product-6.jpg" alt="Shoes" />
-                            </figure>
-                            <div class="card-body items-center text-center font-poppins">
-                              <p class="text-xs uppercase"> Dress Shoes</p>
-                              <h2> Porto Evolution Headset</h2>
-                              <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
-                              <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"  />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"checked/>
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                              </div>
-                              <div class="card-actions">
-                                <button class="btn  hover:bg-lime-500  ">Select Option</button>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="card bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                              <img src="./images/product-7.jpg" alt="Shoes" />
-                            </figure>
-                            <div class="card-body items-center text-center font-poppins">
-                              <p class="text-xs uppercase"> Dress Shoes</p>
-                              <h2> Porto Evolution Headset</h2>
-                              <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
-                              <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"  />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"checked/>
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                              </div>
-                              <div class="card-actions">
-                                <button class="btn  hover:bg-lime-500  ">Select Option</button>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="card  bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                              <img src="./images/product-5.jpg" alt="Shoes" />
-                            </figure>
-                            <div class="card-body items-center text-center font-poppins">
-                              <p class="text-xs uppercase"> Dress Shoes</p>
-                              <h2> Porto Evolution Headset</h2>
-                              <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
-                              <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"  />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"checked/>
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                              </div>
-                              <div class="card-actions">
-                                <button class="btn  hover:bg-lime-500  ">Select Option</button>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Latest Products"  />
-                <div role="tabpanel" class="tab-content p-10">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-5">
-                        <div class="card bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                              <img src="./images/product-9.jpg" alt="Shoes" />
-                            </figure>
-                            <div class="card-body items-center text-center font-poppins">
-                              <p class="text-xs uppercase"> Dress Shoes</p>
-                              <h2> Porto Evolution Headset</h2>
-                              <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
-                              <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"  />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"checked/>
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                              </div>
-                              <div class="card-actions">
-                                <button class="btn  hover:bg-lime-500  ">Select Option</button>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="card  bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                              <img src="./images/product-8.jpg" alt="Shoes" />
-                            </figure>
-                            <div class="card-body items-center text-center font-poppins">
-                              <p class="text-xs uppercase"> Dress Shoes</p>
-                              <h2> Porto Evolution Headset</h2>
-                              <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
-                              <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"  />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"checked/>
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                              </div>
-                              <div class="card-actions">
-                                <button class="btn  hover:bg-lime-500  ">Select Option</button>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="card bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                              <img src="./images/product-6.jpg" alt="Shoes" />
-                            </figure>
-                            <div class="card-body items-center text-center font-poppins">
-                              <p class="text-xs uppercase"> Dress Shoes</p>
-                              <h2> Porto Evolution Headset</h2>
-                              <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
-                              <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"  />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"checked/>
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                              </div>
-                              <div class="card-actions">
-                                <button class="btn  hover:bg-lime-500  ">Select Option</button>
-                              </div>
-                            </div>
-                          </div>
-                        <div class="card bg-base-100 shadow-xl">
-                            <figure class="px-10 pt-10">
-                              <img src="./images/product-5.jpg" alt="Shoes" />
-                            </figure>
-                            <div class="card-body items-center text-center font-poppins">
-                              <p class="text-xs uppercase"> Dress Shoes</p>
-                              <h2> Porto Evolution Headset</h2>
-                              <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
-                              <div class="rating">
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"  />
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                                <input type="radio" name="rating-1" class="mask mask-star"checked/>
-                                <input type="radio" name="rating-1" class="mask mask-star" />
-                              </div>
-                              <div class="card-actions">
-                                <button class="btn  hover:bg-lime-500  ">Select Option</button>
-                              </div>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="card font-poppins">
+          <div class="card-body">
+            <div class="flex gap-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                stroke="currentColor" class="w-10">
+                <path strokeLinecap="round" strokeLinejoin="round"
+                  d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <div>
+                <h2 class="card-title uppercase text-sm font-semibold">Online support 24/7</h2>
+                <p class="text-xs text-gray-400">Free shipping on all orders over $99</p>
+              </div>
+
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="card font-poppins">
+          <div class="card-body">
+            <div class="flex gap-2 items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                stroke="currentColor" class="w-10">
+                <path strokeLinecap="round" strokeLinejoin="round"
+                  d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <div>
+                <h2 class="card-title uppercase text-sm font-semibold">Free shipping & return</h2>
+                <p class="text-xs text-gray-400">Free shipping on all orders over $99</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner section end here -->
+  </header>
+  <!-- Header section end here  -->
+  <main>
+    <!-- offer section start here -->
+    <section class=" container mx-auto my-10">
+      <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8">
+        <div class="card card-compact w-64 lg:w-96 bg-[#F6F7F9] shadow-xl mx-auto">
+          <figure><img src="./images/banner1.jpg" alt="Shoes" /></figure>
+          <div class="card-body bg-[#222529] text-center ">
+            <h2 class="text-xs text-[#5F804A]">Save Up To</h2>
+            <h1 class="text-4xl font-bold text-white">$100</h1>
+            <p class="text-xl text-white">on Porto Watch Series 5</p>
+          </div>
+        </div>
+        <div class="card card-compact w-64 lg:w-96 bg-[#F6F7F9] shadow-xl mx-auto">
+          <figure><img src="./images/banner2.jpg" alt="Shoes" /></figure>
+          <div class="card-body bg-[#222529] text-center ">
+            <h2 class="text-xs text-[#5F804A]">Save Up To</h2>
+            <h1 class="text-4xl font-bold text-white">$80</h1>
+            <p class="text-xl text-white">on Porto Pods Professional</p>
+          </div>
+        </div>
+        <div class="card card-compact w-64 lg:w-96 bg-[#F6F7F9] shadow-xl mx-auto">
+          <figure><img src="./images/banner3.jpg" alt="Shoes" /></figure>
+          <div class="card-body bg-[#222529] text-center ">
+            <h2 class="text-xs text-[#5F804A]">Save Up To</h2>
+            <h1 class="text-4xl font-bold text-white">$90</h1>
+            <p class="text-xl text-white">on Bluetooth Speaker</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- offer section end here -->
+    <!-- tab section start here -->
+    <section class=" border-b-2 my-10">
+      <div role="tablist" class="tabs tabs-bordered container mx-auto">
+        <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Feature Products" checked />
+        <div role="tabpanel" class="tab-content p-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-5">
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="./images/product-5.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center text-center font-poppins">
+                <p class="text-xs uppercase"> Head Phones</p>
+                <h2> Porto Evolution Headset</h2>
+                <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
+                <div class="rating">
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" checked />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+                <div class="card-actions">
+                  <button class="btn  hover:bg-lime-500  ">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="./images/product-6.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center text-center font-poppins">
+                <p class="text-xs uppercase"> Neck Bands</p>
+                <h2> Porto Evolution Neck Bands</h2>
+                <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
+                <div class="rating">
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" checked />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+                <div class="card-actions">
+                  <button class="btn  hover:bg-lime-500  ">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="./images/product-7.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center text-center font-poppins">
+                <p class="text-xs uppercase"> Ear Birds</p>
+                <h2> Porto Evolution Ear Birds</h2>
+                <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
+                <div class="rating">
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" checked />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+                <div class="card-actions">
+                  <button class="btn  hover:bg-lime-500  ">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="./images/product-5.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center text-center font-poppins">
+                <p class="text-xs uppercase"> Head Phones</p>
+                <h2> Porto Evolution Headset</h2>
+                <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
+                <div class="rating">
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" checked />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+                <div class="card-actions">
+                  <button class="btn  hover:bg-lime-500  ">Select Option</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label="Latest Products" />
+        <div role="tabpanel" class="tab-content p-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-5">
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="./images/product-9.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center text-center font-poppins">
+                <p class="text-xs uppercase">Smart Phone</p>
+                <h2> Porto Evolution Headset</h2>
+                <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
+                <div class="rating">
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" checked />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+                <div class="card-actions">
+                  <button class="btn  hover:bg-lime-500  ">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="./images/product-8.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center text-center font-poppins">
+                <p class="text-xs uppercase">Mouse</p>
+                <h2> Porto Evolution Mouse</h2>
+                <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
+                <div class="rating">
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" checked />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+                <div class="card-actions">
+                  <button class="btn  hover:bg-lime-500  ">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="./images/product-6.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center text-center font-poppins">
+                <p class="text-xs uppercase">Neck Band</p>
+                <h2> Porto Evolution Neck Band</h2>
+                <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
+                <div class="rating">
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" checked />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+                <div class="card-actions">
+                  <button class="btn  hover:bg-lime-500  ">Select Option</button>
+                </div>
+              </div>
+            </div>
+            <div class="card ">
+              <figure class="px-10 pt-10">
+                <img src="./images/product-5.jpg" alt="Shoes" />
+              </figure>
+              <div class="card-body items-center text-center font-poppins">
+                <p class="text-xs uppercase"> Head Phone</p>
+                <h2> Porto Evolution Headset</h2>
+                <h1 class="text-2xl font-medium">$99.00 - $109.00</h1>
+                <div class="rating">
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                  <input type="radio" name="rating-1" class="mask mask-star" checked />
+                  <input type="radio" name="rating-1" class="mask mask-star" />
+                </div>
+                <div class="card-actions">
+                  <button class="btn  hover:bg-lime-500  ">Select Option</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- tab section end here -->
+    <!-- Our policy section start here -->
+    <section class="container mx-auto">
+      <div class="grid grid-cols-1 justify-center md:grid-cols-2 lg:grid-cols-3">
+        <div class="card font-poppins">
+          <figure class="px-10 pt-10">
+            <div class="border-2 p-6 rounded-full text-green-600 text-4xl space-y-0">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <div class="space-y-0">
+              <h2 class="uppercase text-black font-bold opacity-90">customer support</h2>
+              <h4 class="text-sm">Need Assistant</h4>
+            </div>
+            <p class="text-xs mt-5">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+        <div class="card font-poppins">
+          <figure class="px-10 pt-10">
+            <div class="border-2 p-6 rounded-full text-green-600 text-4xl space-y-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <div class="space-y-0">
+              <h2 class="uppercase text-black font-bold opacity-90">Secured Payment</h2>
+              <h4 class="text-sm">Safe & Fast</h4>
+            </div>
+            <p class="text-xs mt-5">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+        <div class="card font-poppins">
+          <figure class="px-10 pt-10">
+            <div class="border-2 p-6 rounded-full text-green-600 text-4xl space-y-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9.75h4.875a2.625 2.625 0 0 1 0 5.25H12M8.25 9.75 10.5 7.5M8.25 9.75 10.5 12m9-7.243V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185Z" />
+              </svg>
+              
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <div class="space-y-0">
+              <h2 class="uppercase text-black font-bold opacity-90">Returns</h2>
+              <h4 class="text-sm">Easy & Free</h4>
+            </div>
+            <p class="text-xs mt-5">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- Our policy section end here -->
 
 
-    </main>
+  </main>
 
 </body>
 
